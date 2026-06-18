@@ -1,6 +1,12 @@
 (function () {
   'use strict';
 
+  const host = window.location.hostname.toLowerCase();
+
+  if (host !== 'gitlab' && !host.startsWith('gitlab.')) {
+    return;
+  }
+
   const BUTTONS = [
     { label: '🟥', title: 'Insert P1 priority (Alt+1)', text: '🟥', key: '1' },
     { label: '🟧', title: 'Insert P2 priority (Alt+2)', text: '🟧', key: '2' },

@@ -8,11 +8,7 @@ The loadable Chrome extension lives in:
 chrome-extension/
 ```
 
-Target GitLab URL:
-
-```text
-https://gitlab.themsteam.com/*
-```
+The extension is allowed to load on HTTPS pages, but the content script exits unless the current hostname is `gitlab` or starts with `gitlab.`.
 
 ## Local install
 

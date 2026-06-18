@@ -1,10 +1,8 @@
 # GitLab Comment Priority Buttons
 
-Chrome extension that adds priority emoji buttons and `Alt+1` through `Alt+4` shortcuts to GitLab comment editors on:
+Chrome extension that adds priority emoji buttons and `Alt+1` through `Alt+4` shortcuts to GitLab comment editors.
 
-```text
-https://gitlab.themsteam.com/*
-```
+The extension is allowed to load on HTTPS pages, but the content script exits unless the current hostname is `gitlab` or starts with `gitlab.`.
 
 ## Install locally
 
